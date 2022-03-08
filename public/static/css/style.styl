@@ -1,0 +1,194 @@
+color1 = #FFA500
+color2 = #fdd700
+
+body
+    background-color #f9f9f9
+    font-size 14px
+    font-family 'Roboto', sans-serif
+*
+    margin 0
+    padding 0
+
+a
+.btn
+    &:active
+    &:focus
+        box-shadow none
+        outline none
+
+.mtop16
+    margin-top 16px
+
+.mtop32
+    margin-top 32px
+
+.form-control
+    &:hover
+    &:focus
+        box-shadow none
+
+nav
+    background-color #fff
+    border-bottom 4px solid color1
+    .navbar-brand
+        img
+            width 140px
+    .navbar-nav
+        li.nav-item
+            a.nav-link
+                border 1px solid #fff
+                border-radius 4px
+                color #000
+                font-size .9em
+                font-weight bold
+                margin-right 4px
+                padding 5px 16px !important
+                &:hover
+                    color color1
+            a.btn
+                border 1px solid color1
+                color #000
+                &:hover
+                    background-color color1
+                    color: #fff
+            ul.dropdown-menu
+                // border-radius: 0 4px 4px 0
+                // border-bottom 4px solid color1
+                border-radius: 0 0 4px 4px
+                background-color #fff
+                border: 0
+                top: 200% !important
+                li
+                    border-bottom: 1px solid #fff
+                    a
+                        color #000
+                        display: block
+                        float: none
+                        width 100%
+                        &:last-child
+                            border-bottom: 0
+                        &:hover
+                            background-color #f7f7f7
+        li.link-acc
+            overflow hidden
+            a
+                display: inline-block
+                float: left
+                margin-right 0 !important
+                &:first-child
+                    border-radius 4px 0 0 4px
+                    border-right: 1px solid #fff
+                &:last-child
+                    border-radius 0px 4px 4px 0px
+                img
+                    position relative
+                    top -1px
+                    margin-right 6px
+                    width 20px
+        li.link-user
+            overflow: initial
+            a
+                border 0 !important
+                img
+                    border-radius: 50%
+                &:hover
+                    background-color transparent !important
+                    color #000 !important
+.wrapper
+    .panel
+        background-color #fff
+        border-radius 6px
+        border-bottom 2px solid #e85722
+        width 100%
+        .header
+            border-bottom 1px solid #e8e8e8
+            h2.title
+                display inline-block
+                color #19213d
+                font-size 1.1em
+                margin-bottom 0
+                padding 12px 16px
+            ul
+                display inline-block
+                float right
+                margin-right 12px
+                li
+                    display inline-block
+                    position relative
+                    a
+                        color #333
+                        display inline-block
+                        padding 10px
+                        &:hover
+                            background-color #f6f6f6
+                            color #222
+                            text-decoration none
+                        i
+                            color orange
+                    ul
+                        background-color #fff
+                        border 1px solid #f0f0f0
+                        display none
+                        float none
+                        position absolute
+                        right -16px
+                        width 200px
+                        li
+                            display: inline-block
+                            border-bottom 1px solid #f0f0f0
+                            width 100%
+                            &:last-child
+                                border-bottom: 0
+                            a
+                                display: block
+                                width 100%
+                    &:hover
+                        ul
+                            display block
+        .inside
+            padding 16px
+            .nav
+                .nav-link
+                    border 1px solid #e85722
+                    margin-right 8px
+                    &:hover
+                        background-color #e85722
+                        color #fff
+            .form_search
+                display none
+                margin-bottom 16px
+                .btn
+                    width 100%
+            .big_count
+                display block
+                font-size: 2em
+                text-align center
+                width 100%
+            .edit_avatar
+                a
+                    display block
+                    margin 0 auto
+                    position relative
+                    width 140px
+                    .overlay
+                        display none
+                        justify-content center
+                        align-items center
+                        background-color rgba(0, 0, 0, .55)
+                        border-radius 50%
+                        color: #fff
+                        font-size 2em
+                        height 140px
+                        position absolute
+                        width 100%
+                        img
+                            width 60px
+                    &:hover
+                        .overlay
+                            display flex
+                img
+                    border-radius 50%
+                    display block
+                    width 100%
+                .form-control
+                    display none

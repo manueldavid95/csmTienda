@@ -1,0 +1,234 @@
+// Estilos Globales
+body
+	background-color #f5f6fa
+	font-size 14px
+	font-family: 'Roboto', sans-serif
+
+h2,h3,h4,h5,ul,body,html
+	padding 0
+	margin 0
+
+a
+	text-decoration none
+	&:hover
+		text-decoration none
+
+.form-control
+	&:focus
+		box-shadow none
+		outline none
+// Estilos propios para el sitio
+.mtop16
+	margin-top 16px
+
+.mb32
+	margin-bottom 32px
+	
+.mb16
+	margin-bottom 16px
+
+.wrapper 
+	min-height 100vh
+	overflow hidden
+	.col1
+		float left
+		position relative
+		z-index: 999
+		width 17%
+	.col2
+		float left
+		width 83%
+.sidebar 
+	background-color #fff
+	min-height 100vh
+	.section-top
+		background-color #e85722
+		box-shadow 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
+	.logo
+		display block
+		margin 0 auto
+		padding-top 24px
+		width 60%
+	.user 
+		color #fff !important
+		padding 19px 20px 19px 19px
+		font-size 13px
+	.icono-salir 
+		color #fff
+		font-size 1.2em
+	.main
+		display: block
+		margin-top 8px
+		ul
+			li
+				margin-bottom 4px
+				a
+					color #8998AC
+					display block
+					font-size 1.1em
+					padding 12px 16px
+					i
+						margin-right 10px
+					&:hover
+						background-color #e85722
+						box-shadow 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
+						color #fff !important
+						text-decoration none
+				a.active
+					background-color #e85722
+					box-shadow 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
+					color #fff !important
+					text-decoration none
+.navbar
+	background-color #e85722
+	a
+		color #fff !important
+
+// clase page
+.page
+	padding-top 16px
+	padding-bottom 16px
+	.breadcrumb
+		background-color #fff
+		box-shadow 0 0.5rem 1rem rgba(0, 0, 0, 0.10) !important
+	.breadcrumb-item
+		a
+			color #333
+			&:hover
+				text-decoration none !important
+	.panel
+		background-color #fff
+		border-radius 6px
+		border-bottom 2px solid #e85722
+		width 100%
+		.header
+			border-bottom 1px solid #e8e8e8
+			h2.title
+				display inline-block
+				color #19213d
+				font-size 1.1em
+				padding 12px 16px
+			ul
+				display inline-block
+				float right
+				margin-right 12px
+				li
+					display inline-block
+					position relative
+					a
+						color #333
+						display inline-block
+						padding 10px
+						&:hover
+							background-color #f6f6f6
+							color #222
+							text-decoration none
+						i 
+							color orange
+					ul
+						background-color #fff
+						border 1px solid #f0f0f0
+						display none
+						float none
+						position absolute
+						right -16px
+						width 200px
+						li
+							display: inline-block
+							border-bottom 1px solid #f0f0f0
+							width 100%
+							&:last-child
+								border-bottom: 0
+							a 
+								display: block
+								width 100%
+					&:hover
+						ul 
+							display block
+		.inside
+			padding 16px
+			.nav
+				.nav-link
+					border 1px solid #e85722
+					margin-right 8px
+					&:hover
+						background-color #e85722
+						color #fff
+			.form_search
+				display none
+				margin-bottom 16px
+				.btn
+					width 100%
+			.big_count
+				display block
+				font-size: 2em
+				text-align center
+				width 100%
+			
+// clase para los iconos de la tabla para editar
+.opts
+	a
+		border-radius 4px
+		border 1px solid #dedede
+		display inline-block
+		padding 8px 12px
+		i
+			color orange
+				
+.product_gallery 
+	overflow hidden
+	.btn-submit
+		display block
+		margin-right 1%
+		width 100%
+		a 
+			border 1px dashed orange
+			display block
+			text-align center
+			width 100%
+			padding 12px
+			font-size 1.5em
+			color orange
+			border-radius 4px
+			&:hover 
+				background-color orange
+				color #fff
+	.tumbs
+		overflow: hidden
+		.tumb
+			margin-top 16px
+			position: relative
+			float: left
+			width 48%
+			a
+				background-color rgba(0,0,0, 0.5)
+				border-radius 50%
+				padding 6px 10px
+				color #fff
+				display inline-block
+				position absolute
+				bottom 8px
+				right 8px
+			img 
+				width 100%
+			&:nth-child(odd)
+				margin-right 4%
+.page_user
+	.mini_profile
+		.avatar
+			display block
+			margin 0 auto
+			border-radius 50%
+			width 150px
+		.info
+			background-color #fff
+			span
+				display block
+				font-size 1.1em
+				width 100%
+			span.title
+				font-weight bold
+				margin-top 16px
+		.btn
+			margin-top 16px
+			width 100%
