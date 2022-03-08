@@ -2,7 +2,7 @@ color1 = #FFA500
 color2 = #fdd700
 
 body
-    background-color #f9f9f9
+    background-color #f4f4f4
     font-size 14px
     font-family 'Roboto', sans-serif
 *
@@ -33,6 +33,12 @@ nav
     .navbar-brand
         img
             width 140px
+    .navbar-toggler
+        color: color1
+        &:active
+        &:focus
+            box-shadow: none
+            outline: none
     .navbar-nav
         li.nav-item
             a.nav-link
@@ -192,3 +198,181 @@ nav
                     width 100%
                 .form-control
                     display none
+
+// inicio para categorias
+.home_action_bar
+    background-color #fff
+    border-radius 4px
+    margin-top 24px
+    padding 16px
+    .categories
+        position relative
+        a
+            background-color #111111
+            border-radius 4px
+            color #fff
+            display block
+            padding 12px
+            text-transform uppercase
+            text-decoration none
+            width 100%
+            &:hover
+                background-color color1
+        &:active
+        &:focus
+            a
+                background-color colo1
+        &:hover
+            ul
+                display block
+        ul
+            display none
+            list-style none
+            margin 0
+            padding 0
+            position absolute
+            width 100%
+            li
+                a
+                    background-color #f8f8f8
+                    border-radius 0px
+                    color #111111
+                    img
+                        position relative
+                        margin-top -5px
+                        margin-right 12px
+                        width 20px
+                    &:hover
+                        color #fff
+    .input-group
+        position relative
+        i
+            position absolute
+            font-size 1.4em
+            left 12px
+            top 14px
+            z-index 10
+        .form-control
+            border-radius 4px 0 0 4px
+            padding 10px 16px
+            padding-left 46px
+            z-index 2
+            &:focus
+                border 1px solid color1
+                &::placeholder
+                    color color1
+        &:focus-within
+            i
+                color color1
+            .btn
+                background-color color1
+                color #fff
+        .btn
+            background-color #111111
+            color #fff
+            &:hover
+                background-color color1
+
+// clase para el mdslider
+.mdslider
+    display flex
+    flex-wrap: wrap
+    margin-top 24px
+    min-height 380px
+    overflow: hidden
+    position relative
+    width 100%
+    .md-slider-item
+        align-items: center
+        border-right: 1px solid #fff
+        border-radius: 4px
+        display none
+        background-color #fff
+        color #fff
+        font-size: 4em
+        justify-content: center
+        position: absolute
+        min-height 380px
+        transition: .3s all ease-in-out
+        width 100% !important
+    ul.navigation
+        display block
+        width 100%
+        margin 0
+        padding 0
+        position absolute
+        overflow hidden
+        top calc(50% - 18px)
+        z-index 9
+        li
+            display inline-flex 
+            float left
+            a
+                align-items center
+                background-color rgba(0,0,0,.5)
+                border-radius 50%
+                display flex
+                justify-content center
+                font-size 1.4em
+                height 36px
+                width 36px
+                text-decoration none
+                color #fff
+            &:first-child
+                margin-left 32px
+                a
+                    i
+                        position relative
+                        margin-left -2px
+                        margin-top 2px
+            &:last-child
+                float right
+                margin-right 32px
+                a
+                    i
+                        position relative
+                        margin-left 2px
+                        margin-top 2px
+        
+
+@media only screen and (max-width: 728px)
+    nav
+        .navbar-nav
+            display: block !important
+            margin-top 16px
+            overflow: hidden
+            li.nav-item
+                display block
+                float: left
+                margin-right: 0
+                margin-bottom 12px
+                width 50%
+                a.nav-link
+                    text-align: center
+                    i
+                        font-size: 3em
+                &:last-child
+                    float: inline-end
+                    width 100%
+            li.link-acc
+                a
+                    font-size: 1.2em
+                    width 50% !important
+                    i
+                        font-size: 1em !important
+            li.link-user
+                border 1px solid #f2f2f2 !important
+                border-radius: 6px
+                padding: 8px
+                a
+                    display: block
+                    font-size: 1.2em 
+                    width 100% !important
+                    img
+                        width 36px
+                ul.dropdown-menu
+                    top: 0px !important
+                    hr.dropdown-divider
+                        display: none
+                ul.shadow
+                    box-shadow: none !important

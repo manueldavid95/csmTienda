@@ -2,14 +2,15 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>@yield('title') - Compu Space</title>
 
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="routeName" content="{{ Route::currentRouteName() }}">
 
 	{{-- iconos de fontAwesone --}}
-	<script src="https://kit.fontawesome.com/b530223926.js" crossorigin="anonymous"></script>
+	{{-- <script src="https://kit.fontawesome.com/b530223926.js" crossorigin="anonymous"></script> --}}
+	<link rel="stylesheet" href="{{ url('/static/iconos/all.min.css?v='.time()) }}">
 
 	{{-- Google Fonts --}}
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +19,6 @@
 
 	{{-- bootstrap 5 --}}
 	{{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> --}}
-
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 	{{-- estilos para la galeria de imagenes --}}
@@ -35,14 +35,17 @@
 	{{-- ckditor 4 --}}
 	<script src="{{ url('/static/libs/ckeditor/ckeditor.js') }}"></script>
 	<script src="{{ url('/static/js/admin.js?v=').time() }}"></script>
-
+	{{-- carrusel --}}
+	<script src="{{ url('/static/js/mdslider.js?v='.time()) }}"></script>
     {{-- JavaScript PROPIO --}}
 	<script src="{{ url('/static/js/site.js?v='.time()) }}"></script>
+	
 
 	{{-- sweetalert --}}
 	{{-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
 	{{-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
-	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="{{ url('/static/js/sweetalert2@11.js?v=').time() }}"></script> 
+	{{-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
 
 
 	{{-- estilos propios --}}
@@ -58,12 +61,12 @@
             <a class="navbar-brand" href="{{ url('/') }}">
 				<img src="{{ url('/static/images/logo.png') }}" alt="logo computer">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigationMain" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
             </button>
 
             {{-- enlaces --}}
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" id="navigationMain">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a href="{{ url('/') }}" class="nav-link">Inicio</a>
@@ -109,7 +112,7 @@
 							<ul class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
 								@if(Auth::user()->role == "1")
 									<li>
-										<a class="dropdown-item" href="{{ url('/admin') }}">Administrador</a>
+										<a class="dropdown-item" href="{{ url('/admin') }}" target="_blank">Administrador</a>
 									</li>
 									<li>
 										<hr class="dropdown-divider">

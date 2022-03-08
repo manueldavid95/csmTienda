@@ -16,6 +16,8 @@ return view();
 Correo principal: from@example.com
 contraseña: 2d0dlVu8
 
+### clave para entrar
+correo: manueldavidrangel23@gmail.com
 cambio 16/2/2022
 contraseña: 05081995
 
@@ -42,4 +44,16 @@ C:\MAMP\bin\php\php7.4.1
     + extension=pdo_mysql
 
 
-#prueba de git
+# comandos
+git status
+git add .
+git commit --amend --no-edit
+git push -f origin main
+
+
+{{-- <div class="input-group">
+    <span class="input-group-text" id="basic-addon1">
+                                <i class="far fa-keyboard"></i>
+                            </span>
+						 	{!! Form::text('icon', null, ['class' => 'form-control']) !!}
+						</div> --}}

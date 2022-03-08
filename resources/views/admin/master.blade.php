@@ -9,7 +9,8 @@
 	<meta name="routeName" content="{{ Route::currentRouteName() }}">
 
 	{{-- iconos de fontAwesone --}}
-	<script src="https://kit.fontawesome.com/b530223926.js" crossorigin="anonymous"></script>
+	{{-- <script src="https://kit.fontawesome.com/b530223926.js" crossorigin="anonymous"></script> --}}
+	<link rel="stylesheet" href="{{ url('/static/iconos/all.min.css?v='.time()) }}">
 
 	{{-- Google Fonts --}}
 	<link rel="preconnect" href="https://fonts.googleapis.com">

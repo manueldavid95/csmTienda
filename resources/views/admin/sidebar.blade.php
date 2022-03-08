@@ -57,6 +57,12 @@
 			</li>
 			@endif
 
+			@if (kvfj(Auth::user()->permissions, 'sliders_list'))
+			<li>
+				<a href="{{ url('/admin/sliders') }}" class="lk-sliders_list"><i class="far fa-images"></i>sliders</a>
+			</li>
+			@endif
+
 			@if (kvfj(Auth::user()->permissions, 'settings'))
 			<li>
 				<a href="{{ url('/admin/settings') }}" class="lk-settings"><i class="fas fa-cogs"></i>configuraciones</a>

@@ -97,6 +97,17 @@
 				]
 			],
 
+			'sliders' => [
+				'icon' => '<i class="far fa-images"></i>',
+				'title' => 'Modulo De Sliders',
+				'keys' => [
+					'sliders_list' => 'Puede ver la lista de Sliders.',
+					'slider_add' => 'Puede crear Sliders',
+					'slider_edit' => 'Puede editar los Sliders',
+					'slider_delete' => 'Puede eliminar los Sliders'
+				]
+			],
+
 			// Modulo de configuracion
 			'settings' => [
 				'icon' => '<i class="fas fa-cogs"></i>',
